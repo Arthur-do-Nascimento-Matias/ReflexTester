@@ -29,3 +29,12 @@ body{
     width: 10vw;
     height: 10vw;
 }
+.circle1.ativo{
+    background-color: green;
+}
+.circle2.ativo{
+    background-color: green;
+}
+.circle3.ativo{
+    background-color: green;
+}
