@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+}
+.circlesMother{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 5vw;
+}
+.circle1{
+    background-color: black;
+    border-radius: 80px;
+    border: 2px solid white;
+    width: 10vw;
+    height: 10vw;
+}
+.circle2{
+    background-color: black;
+    border-radius: 80px;
+    border: 2px solid white;
+    width: 10vw;
+    height: 10vw;
+}
+.circle3{
+    background-color: black;
+    border-radius: 80px;
+    border: 2px solid white;
+    width: 10vw;
+    height: 10vw;
+}
