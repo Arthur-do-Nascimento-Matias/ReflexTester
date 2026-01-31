@@ -38,3 +38,31 @@ body{
 .circle3.ativo{
     background-color: green;
 }
+.centralKeyboard {
+    width: 99%;
+    display: flex;  
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.keyboard {
+    border: 2px solid white;
+    padding: 15px;
+    display: inline-block;
+}
+.row{
+    display: flex;
+}
+.key {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.row.last {
+    margin-left: 80px;
+}

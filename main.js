@@ -43,3 +43,70 @@ if(e.key == "j" && circle3.classList.contains("ativo")) {
         }, 2000)
 }
 })
+const keyboardKeys = [
+    [
+        {label: "1", code: "Digit1"},
+        {label: "2", code: "Digit2"},
+        {label: "3", code: "Digit3"},
+        {label: "4", code: "Digit4"},
+        {label: "5", code: "Digit5"},
+        {label: "6", code: "Digit6"},
+        {label: "7", code: "Digit7"},
+        {label: "8", code: "Digit8"},
+        {label: "9", code: "Digit9"},
+        {label: "0", code: "Digit0"}
+    ],
+    [
+        {label: "Q", code: "KeyQ"},
+        {label: "W", code: "KeyW"},
+        {label: "E", code: "KeyE"},
+        {label: "R", code: "KeyR"},
+        {label: "T", code: "KeyT"},
+        {label: "Y", code: "KeyY"},
+        {label: "U", code: "KeyU"},
+        {label: "I", code: "KeyI"},
+        {label: "O", code: "KeyO"},
+        {label: "P", code: "KeyP"}
+    ],
+    [
+        {label: "A", code: "KeyA"},
+        {label: "S", code: "KeyS"},
+        {label: "D", code: "KeyD"},
+        {label: "F", code: "KeyF"},
+        {label: "G", code: "KeyG"},
+        {label: "H", code: "KeyH"},
+        {label: "J", code: "KeyJ"},
+        {label: "K", code: "KeyK"},
+        {label: "L", code: "KeyL"},
+        {label: "Ç", code: "Semicolon"}
+    ],
+    [
+        {label: "Z", code: "KeyZ"},
+        {label: "X", code: "KeyX"},
+        {label: "C", code: "KeyC"},
+        {label: "V", code: "KeyV"},
+        {label: "B", code: "KeyB"},
+        {label: "N", code: "KeyN"},
+        {label: "M", code: "KeyM"}
+    ]
+]
+
+const keyboard = document.querySelector(".keyboard")
+let i = 0
+
+keyboardKeys.forEach(row => {
+    const rowDiv = document.createElement("div")
+    rowDiv.classList.add("row")
+    if(i == keyboardKeys.length - 1) {
+        rowDiv.classList.add("last")
+    }
+    i++
+    row.forEach(keyData => {
+        const keyDiv = document.createElement("div")
+        keyDiv.classList.add("key")
+        keyDiv.textContent = keyData.label
+        keyDiv.dataset.code = keyData.code
+        rowDiv.appendChild(keyDiv)
+    })
+    keyboard.appendChild(rowDiv)
+})
